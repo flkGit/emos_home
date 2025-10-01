@@ -7,6 +7,7 @@
     "node": "^20.19.0 || >=22.12.0"
   },
   "scripts": {
+    "wrangler:types": "wrangler types",
     "dev": "vite",
     "build": "vite build && $npm_execpath run docs:build",
     "deploy": "$npm_execpath run build && wrangler deploy --var VERSION:$(git rev-parse --short HEAD)",
